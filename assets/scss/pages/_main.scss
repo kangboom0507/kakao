@@ -1,0 +1,619 @@
+.title-box {
+
+    .sc-title {
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 1.41;
+        letter-spacing: -.2px;
+
+        @include tablet {
+            font-size: 32px;
+        }
+    }
+
+    .sc-desc {
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: -.2px;
+        margin-top: 16px;
+
+        @include tablet { font-size: 16px;}
+    }
+
+}
+
+
+//visual 
+.sc-visual {
+    width: 100%; height: 100vh; position: relative;
+
+    .visual-wrap {height: 100%;}
+
+    &.sc-visual::after { 
+        content:'';
+        display: inline-block;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 56px;
+        height: 56px;
+        background: url(../images/icon/scroll-down.png) no-repeat;
+        background-size: cover;
+        z-index: 10;
+        animation: bottom 1s linear infinite alternate;
+
+        @include tablet { width: 40px; height: 40px;}
+        @include mobile { width: 30px; height: 30px; bottom: 0; }  
+    }
+
+    @keyframes bottom {
+        0% {margin-bottom: 0;}
+
+        100% { margin-bottom: 30px; }
+    }
+    
+    .visual-list { width: 100%; height: 100%; display: flex; }
+    .visual-item { 
+        overflow: hidden;
+        
+        .img-box {
+            height: 100%; @include bg; 
+
+            img { width: 100%; height: 100vh; object-fit: cover; }   
+        }
+        .txt-box { 
+            position: absolute; 
+            top: 50%;transform: translateY(-50%);
+            color: #fff;
+
+            @include tablet { padding-right: 250px; }
+            @include mobile { padding-top: 300px; }
+            .title{
+                font-size: 44px;
+                font-weight: 400;
+                line-height: 1.41;
+                letter-spacing: -.2px;
+
+                @include tablet { font-size: 30px; line-height: 1.5;}
+                @include mobile { font-size: 20px; }
+
+             }
+            
+            .desc { 
+                margin: 25px 0 80px 0;
+                line-height: 1.27;
+                font-size: 20px;
+                letter-spacing: -.2px;
+                opacity: .8;
+
+                @include tablet { font-size: 18px; margin: 25px 0 0 0;}
+                @include mobile { font-size: 12px; }
+             }
+        }
+    }
+}
+
+
+//about
+.about-wrap { 
+    width: 100%;
+    padding: 240px 0 180px;
+    text-align: center; 
+    box-sizing: border-box;
+    overflow: hidden;
+
+    @include mobile { padding: 180px 0 150px;}
+
+    .title { 
+        font-size: 32px;
+        line-height: 1.5;
+        text-align: center; 
+        font-weight: 700; 
+        padding-bottom: 30px;
+
+        @include mobile { font-size: 20px;}
+    }
+    .desc {
+        font-size: 20px;line-height: 1.5;
+
+        @include tablet { font-size: 15px; }
+        @include mobile { font-size: 12px;}
+    }
+}
+
+
+//content 
+.sc-content { 
+    width: 100%; overflow: hidden; color: #fff;
+
+    .txt-box { 
+
+        .title{
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: -.2px;
+
+            @include mobile { font-size: 20px; }
+         }
+        .desc {
+            margin-top: 16px;
+            font-size: 20px;
+            line-height: 1.5;
+            letter-spacing: -.2px;
+            opacity: .8;
+
+            @include mobile { font-size: 12px;}
+        }
+    }
+
+    .ai {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/tech/c3602337017800001.jpg) no-repeat;
+        box-sizing: border-box;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+        @include mobile { padding: 0 24px; }
+    }
+    .developers {
+        width: 100%;
+        background: url(https://developers.kakao.com/static/images/pc/banner3.png) no-repeat;
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+     }
+}
+
+
+//person , services
+.background { 
+    background: url(../images/bg/bg_technology.png) no-repeat;
+    background-size: cover;
+    padding: 180px 0 356px 0;
+    overflow: hidden;
+
+    @include tablet { padding: 120px 24px 0;}
+} 
+
+.sc-person { 
+    padding-bottom: 356px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    .title-box { padding-left: 660px; max-width: 550px;
+
+      @include tablet { padding-left: 0; }
+    }
+
+   .person-wrap {
+     margin-top: 20px;  
+
+     @include pc { display: flex; flex-wrap: wrap; justify-content: space-between;}
+
+    }
+
+    .gnb-item {
+        position: relative;
+
+        @include pc { width: calc(50% - 10px); }
+        @include mobile { width: 100%; padding-bottom: 50px; }
+       
+        &:nth-child(2n) { 
+          transform: translateY(20%);
+        
+          @include mobile { transform: none;}
+        }
+
+        .video-box {
+            position: relative;
+           
+            .video {
+               width: 550px; border-radius: 10% 20%;
+
+               @include pc { width: 100%; }
+            }
+       }
+        .txt-box { 
+            .title {
+                margin-top: 10px;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 1.4;
+                letter-spacing: -.2px;
+
+                @include tablet { br{ display: none; } font-size: 24px; }
+                @include mobile { font-size: 20px; }
+
+            }
+            .desc {
+                margin-top: 8px;
+                font-size: 18px;
+                line-height: 1.56;
+
+                @include mobile { font-size: 12px;}
+
+                &.desc::after {
+                    content: '';
+                    margin-top: 20px;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: url(../images/icon/w-arrow.png) no-repeat;
+                    background-size: 100%;
+
+                    @include mobile { width: 20px; height: 20px; margin-top: 10px; }
+                }
+             }
+          }
+       }
+
+       .reverse { display: flex; flex-direction: row-reverse; }
+}
+
+.sc-services {
+    padding-bottom: 176px;
+    color: #fff;
+
+    .services-wrap { padding-top: 20px;}
+
+    .services-list {
+        width: 1110px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 20px;
+
+        @include pc { justify-content: space-between; }
+        @include tablet { padding-left: 0; }
+        @include mobile { flex-direction: column; }
+
+        .gnb-item {
+            width: 400px;
+            margin: 76px 0 0 150px;
+            position: relative;
+
+            @include pc { width: calc(50% - 40px); margin: 0; padding-bottom: 50px; }
+            @include mobile { width: 100%; padding-bottom: 50px;}
+
+            .img-box { 
+              img{
+                width: 100%;
+                height: 548px;
+                border-radius: 16px;
+                background-size: 100%;
+                object-fit: cover;
+
+                @include tablet { height: 40vw; }
+              }
+            }
+            .txt-box { 
+
+               
+                .text {
+                  font-size: 40px;
+                  line-height: 1.4;
+                  position: absolute;
+                  writing-mode: tb-rl;
+                  left: -60px;
+                  top: 0;
+                  transform: rotate(180deg); 
+
+                  @include tablet{ font-size: 20px; left: -40px; }
+                  @include mobile{ display: none; }
+
+                }
+                .title {
+                  font-size: 24px;
+                  line-height: 1.5;
+                  margin-top: 10px;
+                }
+                .desc {
+                  margin-top: 8px;
+                  font-size: 18px;
+                  line-height: 1.56;
+                  
+                  &.desc::after {
+                    content: '';
+                    margin-top: 20px;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: url(../images/icon/w-arrow.png) no-repeat;
+                    background-size: 100%;
+                  }
+                 }
+            }
+        }
+    }
+ }
+
+
+//banner
+.sc-banner {
+  background: url(https://blog.kakaocdn.net/dn/osEuF/btqCly8hUYx/2teK4a9z6wTXP4bMDXs8l0/img.jpg) no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  background-position:center;
+  box-sizing: border-box;
+
+  .esg-wrap { 
+    text-align: center;
+    color: #fff;
+    padding: 80px 0;
+    
+
+    .title { 
+      font-size: 24px; line-height: 1.5;
+      font-weight: 600; letter-spacing: -.2px;
+
+    }
+    .desc { 
+      margin-top: 16px; font-size: 40px;
+      line-height: 1.4; letter-spacing: -.2px;
+
+      @include tablet { font-size: 29px; }
+      @include mobile { font-size: 20px; }
+    }
+    .link { 
+      margin: 0 auto; 
+    
+      @include mobile { margin-top: 50px; }
+    }
+  }
+
+ } 
+
+
+//social
+.sc-social { 
+  overflow: hidden;
+  padding: 180px 0;
+  display: flex;
+
+  .title-box { 
+    position: relative; 
+    margin-bottom: 48px;
+    justify-content: space-between;
+    
+
+    .link {
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      border: 1px solid #000;
+
+      @include mobile { position: relative; left: 0; }
+    }
+  }
+  
+  .txt-box {
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    @include mobile { padding: 20px; }
+
+    .title { color: #666;  
+
+      @include mobile { font-size: 12px;}
+    }
+
+    .strong { 
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 29px;
+      opacity: .8;
+      line-height: 1.56;
+
+      @include tablet { font-size: 20px; br{display: none;} }
+      @include mobile { font-size: 16px; }
+
+      &.strong::after {
+        content: '';
+        margin-top: 20px;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../images/icon/b-arrow.png) no-repeat;
+        background-size: 100%;
+
+        @include tablet { width: 20px; height: 20px; }
+      }
+    }
+  }
+
+  .social-wrap {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 692px;
+
+    @include mobile { flex-direction: column; }
+
+    .social-left {  flex: 1;
+          position: relative;
+
+      .education { 
+          margin-right: 20px;
+          height: 690px;
+          background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/socialimpact/c369bca7017800001.jpg) no-repeat;
+          background-size: cover;
+          object-fit: cover;
+          border-radius: 18px;
+
+          @include mobile { width: 100%; height: 200px; margin-bottom: 20px; }
+      }
+    }
+    .social-right { 
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .growth {
+        position: relative;
+        width: 100%;
+        height: 272px;
+        background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/socialimpact/c36a56ad017800001.jpg) no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        border-radius: 18px;
+
+        @include mobile { width: 100%; height: 220px; margin-bottom: 20px; }
+       }
+      .class{ 
+        position: relative;
+        width: 100%;
+        height: 396px;
+        background: url(https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/socialimpact/c3717d46017800001.jpg) no-repeat;
+        border-radius: 18px;
+        background-size: cover;
+
+        @include mobile { width: 100%; height: 265px; }
+      }
+    }
+  }
+}
+
+
+//news
+.sc-news {
+  width: 100%;
+  padding-top: 180px;
+  overflow: hidden;
+
+  .title-box {
+    position: relative;
+    margin-bottom: 48px;
+    justify-content: space-between;
+
+    .link {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        border: 1px solid #000;
+
+        @include mobile { position: relative; left: 1px; }
+    }
+}
+
+  .news-wrap {
+    display: flex; justify-content: space-between;
+
+    @include mobile { flex-direction: column; }
+
+    .news-box { 
+      flex: 1;
+      margin-right: 20px;
+
+      @include mobile { padding-bottom: 50px; }
+
+      .img-box { 
+        width: 100%;
+        height: 270px;
+        border-radius: 18px;
+
+        img { border-radius: 18px; width: 100%; height: 100%; object-fit: cover;}
+      } 
+    }
+    .txt-box { 
+      display: block;
+
+      .text { 
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #2b91fe;
+        letter-spacing: -0.2px;
+
+        @include pc { font-size: 14px; }
+      }
+      .strong { 
+        display: block;
+        margin-top: 8px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -0.2px;
+
+        @include pc { font-size: 16px; }
+      }
+      .relevant { 
+        border: 1px solid #ccc;
+        font-size: 14px;
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 4px;
+        margin-top: 12px;
+
+        @include pc { font-size: 12px; padding: 6px 8px; }
+      }
+    }
+  }
+}
+
+
+//center 
+.sc-center { 
+  padding: 174px 0 120px;
+  
+  @include mobile { padding: 80px 10px 120px; }
+
+  .center-wrap { 
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #ffed00;
+    background-size: cover;
+    padding: 64px;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    @include mobile { padding: 40px; height: 200px;  }
+
+    .title{ 
+      font-size: 32px; line-height: 1.5; font-weight: bold;
+      
+      @include mobile { font-size: 18px; line-height: 1.5; }
+    }
+
+    .btn-box { 
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      
+      @include mobile { margin-top: 30px; }
+
+      .link-more{
+        font-size: 14px;
+        margin-top: 40px;
+        border: 1px solid #000;
+        padding: 10px 32px;
+        border-radius: 50px;
+        font-weight: 600;
+
+        @include mobile { padding: 5px 20px; font-size: 10px; }
+
+        &.link-more+.link-more {
+          margin-left: 20px;
+
+          @include mobile { margin-left: 10px; }
+        }
+      }
+    }
+  }
+}

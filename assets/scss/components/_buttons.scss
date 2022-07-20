@@ -1,0 +1,52 @@
+.btn-box { 
+    display: flex;
+    margin-top: 40px;
+    
+    @include pc { margin-top: 80px;}
+    @include tablet { margin-top: 40px;}
+    @include mobile { margin-top: 20px; }
+
+    .link { 
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid #000;
+        border-radius: 50px;
+       border-color:rgba(255,255,255,.5);
+       line-height: 48px;  //border 생각해서 =50
+       padding: 0 30px;
+
+       @include mobile {padding:5px 20px; line-height: 26px; font-size: 10px;
+        width: 80px; margin-top: 10px;
+    }
+    
+       +.link { margin-left: 20px;  
+
+          @include mobile { margin: 10px 0 0 10px;    } }
+        &.link::after { 
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(../images/icon/w-arrow.png) no-repeat;
+            background-size: cover;
+          vertical-align: -5px;
+          margin-left: 5px;
+
+          @include mobile { width: 15px; height: 15px; margin-left: 2px; vertical-align: -4px;} 
+        }
+
+        &.more { 
+            border: 1px solid #fff;
+            color: #000;
+            background: #fff;
+        
+            &.link::after { 
+                content:'';
+                background: url(../images/icon/b-arrow.png) no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    
+    
+}

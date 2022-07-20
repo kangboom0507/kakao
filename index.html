@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kakao</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+</head>
+<body>
+  <header class="header-area">
+    <div class="logo-wrap">
+      <h1 class="logo"><a href="">kakao</a></h1>
+    </div>
+    <nav class="gnb-wrap">
+      <ul class="gnb-list">
+        <li class="gnb-item"><a href="" class="link-gnb">카카오</a>
+          <div class="sub-box">
+            <ul class="sub-list">
+               <li class="sub-item"><a href="">카카오 문화</a></li>
+               <li class="sub-item"><a href="">공동체</a></li>
+               <li class="sub-item"><a href="">히스토리</a></li>
+               <li class="sub-item"><a href="">위치</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="gnb-item"><a href="" class="link-gnb">뉴스</a></li>
+        <li class="gnb-item"><a href="" class="link-gnb">기술과 서비스</a>
+          <div class="sub-box">
+            <ul class="sub-list">
+              <li class="sub-item"><a href="">기술</a></li>
+              <li class="sub-item"><a href="">서비스</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="gnb-item"><a href="" class="link-gnb">약속과책임</a>
+          <div class="sub-box">
+            <ul class="sub-list">
+              <li class="sub-item"><a href="">ESG</a></li>
+              <li class="sub-item"><a href="">소셜임팩트</a></li>
+              <li class="sub-item"><a href="">디지털 권리</a></li>
+              <li class="sub-item"><a href="">AI 권리</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="gnb-item"><a href="" class="link-gnb">채용</a></li>
+      </ul>
+    </nav>
+    <div class="util-wrap">
+      <a href="" class="gnb-item search"><span class="blind">검색</span></a>
+      <a href="" class="gnb-item menu"><span class="blind">메뉴</span></a>
+        <div class="sub-menu">
+          <ul class="sub-menu-list">
+            <li class="sub-menu-item"><a href="" class="link-sub-item">카카오</a>
+              <ul class="sub-sub-list">
+                <li class="sub-item"><a href="">카카오문화</a></li>
+                <li class="sub-item"><a href="">공동체</a></li>
+                <li class="sub-item"><a href="">히스토리</a></li>
+                <li class="sub-item"><a href="">위치</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu-item"><a href="" class="link-sub-item">뉴스</a></li>
+            <li class="sub-menu-item"><a href="" class="link-sub-item">기술과 서비스</a>
+              <ul class="sub-sub-list">
+                <li class="sub-item"><a href="">기술</a></li>
+                <li class="sub-item"><a href="">서비스</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu-item"><a href="" class="link-sub-item">약속과 책임</a>
+              <ul class="sub-sub-list">
+                <li class="sub-item"><a href="">ESG</a></li>
+                <li class="sub-item"><a href="">소셜임팩트</a></li>
+                <li class="sub-item"><a href="">디지털 권리</a></li>
+                <li class="sub-item"><a href="">AI 윤리</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu-item"><a href="" class="link-sub-item">채용</a></li>
+          </ul>
+        </div>
+    </div>
+  </header>
+  <!--header end-->
+  <main class="container">
+    <section class="sc-visual">
+      <h2 class="blind">메인 슬라이드</h2>
+      <div class="swiper visual-wrap">
+        <ul class="swiper-wrapper visual-list">
+          <li class="swiper-slide visual-item" >
+            <div class="img-box" data-swiper-parallax="400">
+              <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/3247712c017e00001.jpg" alt="카카오지갑">
+            </div>
+            <div class="common-inner">
+              <div class="txt-box">
+                <h3 class="title" data-swiper-parallax="-800">지갑 없는 세상의 시작점,<br>카카오톡 지갑</h3>
+                <p class="desc" data-swiper-parallax="-500">존재와 가격,<br>경력을 카카오톡에서 증명하다.</p>
+                <div class="btn-box" data-swiper-parallax="-300">
+                  <a href="" class="link more">자세히 보기</a>
+                  <a href="" class="link ">뉴스 보기</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide visual-item" >
+            <div class="img-box" data-swiper-parallax="400">
+              <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/22660caa017d00001.jpg" alt="컨퍼런스">
+            </div>
+            <div class="common-inner">
+              <div class="txt-box">
+                <h3 class="title" data-swiper-parallax="-800">공동체를 향해 열어 젖힌<br>노하우 놀이터</h3>
+                <p class="desc" data-swiper-parallax="-500">if(kakao) 컨퍼런스</p>
+                <div class="btn-box" data-swiper-parallax="-300">
+                  <a href="" class="link ">뉴스 보기</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide visual-item" >
+            <div class="img-box" data-swiper-parallax="400">
+              <img src="	https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/41f0c3c0017a00001.png" alt="인공기술">
+            </div>
+            <div class="common-inner">
+              <div class="txt-box">
+                <h3 class="title" data-swiper-parallax="-800">인공지능 기술이<br>함께한다면 세상은 어떻게 변할까?</h3>
+                <p class="desc" data-swiper-parallax="-500">AI와 카카오</p>
+                <div class="btn-box" data-swiper-parallax="-300">
+                  <a href="" class="link more">서비스 보기</a>
+                  <a href="" class="link ">소개 사이트</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--sc-visual end-->
+    <div class="common-inner">
+      <article class="about-wrap">
+        <h2 class="title">함께하는 모든 마음,<br>카카오같이 가치</h2>
+        <p class="desc">
+          누구나 필요할 때 필요한 곳을 위해 모금을 제안할 수 있고,<br>
+          갑작스러운 재난시기에 나의 작은 힘으로 큰 용기를 전할 수 있고<br>
+          sns공유, 댓글, 응원하기 등의 참여로도 기부금을 쌓을 수 있는 그런 세상 입니다.
+        </p>
+      </article>
+    </div>
+    <!--about end-->
+    <section class="sc-content">
+      <div class="ai">
+        <div class="common-inner">
+          <div class="txt-box">
+            <a href="">
+              <h3 class="title"> AI를 통해 일상의 모든 것들을<br>
+                누구나 편리하게 경험하는 세상, kakao i</h3>
+              <p class="desc">   AI를 통해 일상의 모든 것들을 더 편리하게 이용할 수 있는 경험을 제공하는 것,<br> 특별한 지식 없이도 누구나 기술 진화의 혜택을 볼 수 있도록 하는 것.<br> 그것이 카카오 i를 통해 만들어 가려는 세상입니다.</p>
+              <div class="btn-box">
+                <span class="link">더 알아보기</span>
+              </div>  
+            </a>
+            </div>
+          </div>
+        </div>
+      <div class="developers">
+        <div class="common-inner">
+          <div class="txt-box">
+            <a href="">
+              <h3 class="title">꿈꾸던 세상을 현실로 만드는<br>카카오디벨로퍼스</h3>
+              <p class="desc">카카오디벨로퍼스는 수많은 개발자들과 함께<br> 새로운 가치를 만들어가는 카카오 API플랫폼입니다.<br>꿈꾸던 세상을 지금, 마음껏 실현해보세요.</p>
+              <div class="btn-box">
+                <span class="link">기술 알아보기</span>
+              </div>  
+            </a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--sc-content end-->
+    <div class="background">
+      <div class="common-inner">
+        <section class="sc-person">
+          <div class="title-box">
+            <a href="">
+              <h2 class="sc-title">카카오스럽나요?</h2>
+              <p class="sc-desc"> 우리의 관점, 행동하는 방법, 지향하는 목표까지 카카오스러움은 이미 우리 안에 스며들어 있습니다. 우리가 더 나은 세상을 만들기 위해 고민하면서 자연스럽게 체득한 태도이자 본질이기 때문입니다. 앞으로도 우리는 카카오스러움에서 고민을 시작하고, 답을 찾을 것입니다.</p>
+              <div class="btn-box">
+                <span class="link">전체보기</span>
+              </div>
+            </a>
+          </div>
+          <div class="person-wrap">
+            <div class="gnb-item ">
+              <a href="">
+                <div class="video-box">
+                  <video class="video" autoplay muted playsinline loop>
+                    <source src="https://www.kakaocorp.com/page/culture/vod_culture1.mp4">
+                  </video>
+                </div>
+                <div class="txt-box">
+                  <h3 class="title">가보지 않은 길을<br> 두려워 하지 않습니다.</h3>
+                  <p class="desc">  "가보지 않은 길은 위험하잖아?"<br>가보지 않은 길은 실패의 위험이 따르지만<br> 우리는 개선보다 혁신의 길을 가는 사람들입니다.<br> 문제 자체를 다시 정의하고 새로운 해답을 찾는 것에 집중합니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="gnb-item reverse">
+              <a href="">
+                <div class="video-box">
+                  <video class="video" autoplay muted playsinline loop>
+                    <source src="https://www.kakaocorp.com/page/culture/vod_culture2.mp4">
+                  </video>
+                </div>
+                <div class="txt-box">
+                  <h3 class="title">무슨 일이든 본질만남기고<br>처음부터 다시 생각해 봅니다.</h3>
+                  <p class="desc">끊임없이 ‘왜?’라는 물음을 던집니다.<br> 그렇게 익숙한 것을 새롭게, 가치 있게 만듭니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="gnb-item">
+              <a href="">
+                <div class="video-box">
+                  <video class="video" autoplay muted playsinline loop>
+                    <source src="https://www.kakaocorp.com/page/culture/vod_culture3.mp4">
+                  </video>
+                </div>
+                <div class="txt-box">
+                  <h3 class="title">나보다 동료의 생각이<br>더 옳을 수 있다는 믿음을 가집니다.</h3>
+                  <p class="desc"> "내가 항상 정답일까?"<br> 격렬한 토론과 논쟁 속에서도 서로에 대한<br> 신뢰가 있다면 반드시 더 나은 답을 찾을 수 있습니다.<br> 신뢰를 받기 위해서 상대방을 먼저 존중하세요.<br> 혼자 가면 빨리 갈 수 있지만, 함께 가면 멀리 갈 수 있습니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="gnb-item reverse">
+              <a href="">
+                <div class="video-box">
+                  <video class="video" autoplay muted playsinline loop>
+                    <source src="https://www.kakaocorp.com/page/culture/vod_culture4.mp4">
+                  </video>
+                </div>
+                <div class="txt-box">
+                  <h3 class="title">스스로 몰입하고<br>주도적으로 일합니다.</h3>
+                  <p class="desc">  일에 끌려다니지 않고 끌고 가기 위해서<br> 언제나 내가 먼저 생각하고, 질문하고, 움직입니다.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!--sc-person end-->
+        <section class="sc-services">
+          <div class="title-box">
+            <a href="">
+              <h2 class="sc-title">OUR SERVICES</h2>
+              <p class="sc-desc">더 나은 세상을 만드는 카카오</p>
+              <div class="btn-box">
+                <span class="link">전체보기</span>
+              </div>
+            </a>
+          </div>
+          <div class="services-wrap">
+            <ul class="services-list">
+              <li class="gnb-item">
+                <a href="">
+                  <div class="img-box">
+                    <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/df891f12017d00001.png?type=thumb&opt=C630x472" alt="톡캘린더">
+                  </div>
+                  <div class="txt-box">
+                    <em class="text">Talk Calendar</em>
+                    <h3 class="title">톡캘린더</h3>
+                    <p class="desc">채팅방에서 빠르게 만들고, 톡캘린더에서 한 번에 관리하는 나만의 똑똑한 일정 관리 지금 톡캘린더로 시작해보세요.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gnb-item">
+                <a href="">
+                  <div class="img-box">
+                    <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/abcd3a11017900001.jpg" alt="카카오톡">
+                  </div>
+                  <div class="txt-box">
+                    <em class="text">Kakao Talk</em>
+                    <h3 class="title">카카오톡</h3>
+                    <p class="desc">사람과 세상, 그 이상을 연결하는 카카오톡 전 우주 통신규약을 꿈꾸는 대표 메신저 언제 어디서나 간편하게 실시간 무료로 즐겨보세요.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gnb-item">
+                <a href="">
+                  <div class="img-box">
+                    <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/798cb262017900001.jpg" alt="선물하기">
+                  </div>
+                  <div class="txt-box">
+                    <em class="text">Kakao Talk gift</em>
+                    <h3 class="title">카카오톡 선물하기</h3>
+                    <p class="desc">메시지를 보내듯 편하게 주고 받는 선물을 통해 소중한 사람과의 관계가 더욱 특별해집니다.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gnb-item">
+                <a href="">
+                  <div class="img-box">
+                    <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/f62cbd72017a00001.jpg" alt="지그재그">
+                  </div>
+                  <div class="txt-box">
+                    <em class="text">zigzag</em>
+                    <h3 class="title">지그재그</h3>
+                    <p class="desc">개인화 추천으로 나만의 스타일을 발견하는 쇼핑. 지그재그와 함께 내 맘대로 사세요.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gnb-item">
+                <a href="">
+                  <div class="img-box">
+                    <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/fcf3da10017a00001.png" alt="웹툰">
+                  </div>
+                  <div class="txt-box">
+                    <em class="text">Kakao Webtoon</em>
+                    <h3 class="title">카카오웹툰</h3>
+                    <p class="desc">끊임없는 작품 탐색으로 눈과 손이 즐거운 공간.전세계 사람들을 매료시킨 다양한 작품들이 가득한 카카오웹툰에서 나의 취향을 만나보세요.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gnb-item">
+                <a href="">
+                  <div class="img-box">
+                    <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/7a339b98017900001.jpg" alt="카카오내비게이션">
+                  </div>
+                  <div class="txt-box">
+                    <em class="text">Kakao Navi</em>
+                    <h3 class="title">카카오내비게이션</h3>
+                    <p class="desc">빠르고 정확한 길 안내와 즐거운 운전 도우미가 함께한다면,지루했던 운전경험이 일상의 즐거움으로 바뀔 수 있습니다.운전자에게 필요한 모든 차량 관리 서비스도 같이 이용해보세요!</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--sc-services end-->
+      </div>
+    </div>
+    <section class="sc-banner">
+      <div class="common-inner">
+        <div class="esg-wrap">
+          <h2 class="title">ESG</h2>
+          <p class="desc">우리는 지속 가능한 성장을 통해 함께하는 내일을 그려갑니다.</p>
+          <div class="btn-box">
+            <a href="" class="link">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--banner end-->
+    <section class="sc-social">
+      <div class="common-inner">
+        <div class="title-box">
+          <a href="">
+            <h2 class="sc-title">소셜임팩트</h2>
+            <p class="sc-desc">카카오는 당신과 함께 더나은 세상을 만듭니다.</p>
+            <div class="btn-box">
+              <span class="link more">전체보기</span>
+            </div>
+          </a>
+        </div>
+        <div class="social-wrap">
+        <div class="social-left">
+          <div class="education">
+            <div class="txt-box">
+              <h3 class="title">청소년 디지털 시민 교육,사이좋은 디지털 세상 </h3>
+              <strong class="strong">세상을 배우는 청소년들이 안전한 디지털 환경에서 더 나은 시민으로 성장할 수 있도록 필요한 가치를 교육합니다.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="social-right">
+          <div class="growth">
+            <div class="txt-box">
+              <h3 class="title">함께 자란다,카카오 동반성장</h3>
+              <strong class="strong">카카오는 앞으로도 파트너들의 꿈과 성장을 위해 최선을 다하겠습니다.</strong>
+            </div>
+          </div>
+          <div class="class">
+            <div class="txt-box">
+              <h3 class="title">Kakao 클래스</h3>
+              <strong class="strong">카카오 서비스 플랫폼의 활용 노하우를 교육하고 서비스 담당자들의 멘토링을 진행합니다.</strong>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--sc-social end-->
+    <div class="common-inner">
+      <section class="sc-news">
+        <div class="title-box">
+          <a href="">
+            <h2 class="sc-title">NEWS</h2>
+            <p class="sc-desc">새로운 소식을 만나보세요.</p>
+            <div class="btn-box">
+              <span class="link more">전체보기</span>
+            </div>
+          </a>
+        </div>
+        <div class="news-wrap">
+          <div class="news-box">
+            <div class="img-box">
+              <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/26e2d42c018100001.jpg
+              " alt="카카오메이커스">
+            </div>
+            <div class="txt-box">
+              <em class="text">보도자료</em>
+              <strong class="strong">카카오메이커스,<br> 환경의 날 맞아 꿀벌 살리는 기부 기획전 진행</strong>
+              <div class="hashtag">
+                <span class="relevant">#노이신 작가</span>
+                <span class="relevant">#꿀벌 일러스트</span>
+                <span class="relevant">#세계환경의 날</span>
+              </div>
+            </div>
+          </div>
+          <div class="news-box">
+            <div class="img-box">
+              <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/3c6a6974018100001.png" alt="카카오 유니버스">
+            </div>
+            <div class="txt-box">
+              <em class="text">보도자료</em>
+              <strong class="strong">카카오,<br> 메타버스 비전 ‘카카오 유니버스’ 공개</strong>
+              <div class="hashtag">
+                <span class="relevant">#B2C2C2</span>
+                <span class="relevant">#메타버스</span>
+                <span class="relevant">#유니버스</span>
+              </div>
+            </div>
+          </div>
+          <div class="news-box">
+            <div class="img-box">
+              <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/1762a6de018100001.jpg" alt="사회문제 해결을 위한 행동 참여 프로젝트">
+            </div>
+            <div class="txt-box">
+              <em class="text">보도자료</em>
+              <strong class="strong">카카오같이가치, 사회문제 해결을 위한<br> 행동참여 프로젝트 ‘모두의행동’ 런칭</strong>
+              <div class="hashtag">
+                <span class="relevant">#모두의 행동</span>
+                <span class="relevant">#행동참여프로젝트</span>
+                <span class="relevant">#그린디지털</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--sc-news end-->
+    <section class="sc-center">
+      <div class="center-wrap">
+        <h2 class="title">어떤 서비스를 도와드릴까요?<br>kakao가 도와드리겠습니다.</h2>
+        <div class="btn-box">
+          <a href="" class="link-more">고객센터</a>
+          <a href="" class="link-more">문의하기</a>
+        </div>
+      </div>
+    </section>
+    <!--sc-center end-->
+  </main>
+  <!--main end-->
+  <footer class="footer-area">
+    <div class="common-inner">
+      <div class="footer-wrap">
+        <div class="link-area">
+          <a href="" class="link">이용약관</a>
+          <a href="" class="link">위치기반서비스이용약관</a>
+          <a href="" class="link">개인정보처리방침</a>
+          <a href="" class="link">운영정책</a>
+          <a href="" class="link">청소년보호정책</a>
+          <a href="" class="link">귄리침해신고안내</a>
+          <a href="" class="link">공지사항</a>
+          <a href="" class="link">사이버윤리실</a>
+        </div>
+        <address class="foo-addr">
+        <span class="addr">kakao</span>
+        <span class="addr">사업자번호 : 000-00-0000</span>
+        <span class="addr">대표 : 김범수</span><br>
+        <span class="addr">주소 : 경기도 성남시 분당구 판교역로 235 에이치스퀘어 엔동</span><br>
+        <span class="addr"><a href="tel:02-0000-0000">대표전화 : 02-0000-0000</a></span>
+        <span class="addr"><a href="">대표이메일:kakao@kakao.net</a></span>
+        </address>
+        <div class="copy-box">
+          <p class="copy">© Kakao Corp. All Rights Reserved.</p>
+        </div>
+        <div class="policy-area">
+            <div class="policy-wrap">
+              <a class="link-youtube">유튜브</a>
+              <div class="policy-select">
+                  <div class="select-box">
+                    <button class="btn-link">카카오계열사</button>
+                  </div>
+                <div class="policy-box">
+                  <ul class="policy-list">
+                    <li><a href="">CJ그룹</a></li>
+                    <li><a href="">CJ주식회사</a></li>
+                    <li><a href="">식품&식품서비스</a></li>
+                    <li><a href="">CJ제일제당</a></li>
+                    <li><a href="">CJ푸드빌</a></li>
+                    <li><a href="">CJ프레시웨이</a></li>
+                    <li><a href="">생명공학</a></li>
+                    <li><a href="">CJ제일제당(바이오)</a></li>
+                    <li><a href="">CJ Feed&Care</a></li>
+                    <li><a href="">물류 & 신유통</a></li>
+                    <li><a href="">>CJ대한통운</a</li>
+                    <li><a href="">CJ대한통운(건설)</a></li>
+                    <li><a href="">CJ올리브영</a></li>
+                    <li><a href="">CJ올리브네트윅스</a></li>
+                    <li><a href="">CJ ENM 커머스부문</a></li>
+                    <li><a href="">엔터테이먼트 & 미디어</a></li>
+                    <li><a href="">CJ ENM 엔터테이먼트부문</a></li>
+                    <li><a href="">CJ CGV</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="policy-select">
+                <div class="select-box">
+                  <button class="btn-link">관련사이트</button>
+                </div>
+              <div class="policy-box">
+                <ul class="policy-list">
+                  <li><a href="">카카오 AI</a></li>
+                  <li><a href="">카카오 프라이버시</a></li>
+                  <li><a href="">다음포털사이트</a></li>
+                  <li><a href="">동반 성장 사이트</a></li>
+                  <li><a href="">제주 with kakao</a></li>
+               
+                </ul>
+              </div>
+            </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--footer end-->
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/layout.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+
+</body>
+</html>

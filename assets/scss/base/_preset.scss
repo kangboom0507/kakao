@@ -1,0 +1,28 @@
+body {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;    
+    clip:rect(0,0,0,0);
+}
+
+
+img{
+    vertical-align: top;
+    width: 100%;
+}
+
+.common-inner { 
+    width: 1280px;
+    margin: 0 auto;
+    @include pc { width: 100%; padding: 0 50px; box-sizing: border-box; }
+    @include tablet { width: 100%; padding: 0 30px; box-sizing: border-box; }
+    @include mobile { padding: 0 10px;}
+}
+
